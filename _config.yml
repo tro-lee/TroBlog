@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: TroTro
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: TroTro
 language: en
 timezone: ''
 
@@ -44,7 +44,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
@@ -102,4 +102,6 @@ theme: hexo-theme-particlex
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: ubuntu@43.143.151.29:/home/ubuntu/repos/TroTroBlog.git
+  branch: master

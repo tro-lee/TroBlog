@@ -2,13 +2,13 @@
 # Developer: argvchs
 
 # avatar image url
-head_img:
+head_img: https://avatars.githubusercontent.com/u/63386366?v=4
 
 # home page head info block
 head_block_enable: true
 
 # home page head background style
-home_background:
+home_background: https://imgapi.xl0408.top/index.php
 
 # WARNING! vf_fonts (variable fonts) feature is EXPERIMENTAL
 # MDN: https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide
@@ -23,22 +23,10 @@ menu:
         name: house
         theme: solid
         src: /
-    about:
-        name: id-card
-        theme: solid
-        src: /about
     archives:
         name: box-archive
         theme: solid
         src: /archives
-    categories:
-        name: bookmark
-        theme: solid
-        src: /categories
-    tags:
-        name: tags
-        theme: solid
-        src: /tags
     # Example:
     # <name>:
     #     name: <icon-name>
@@ -48,9 +36,12 @@ menu:
 # side info card
 card:
     enable: true
-    description: ["Description..."] # You can add more
+    description: ["hi"] # You can add more
     icon_links:
-        []
+        author:
+            name: TroTro
+            theme: solid
+            link: ''
         # Example:
         # <name>:
         #    name: <icon-name>
