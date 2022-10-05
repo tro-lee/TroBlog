@@ -36,21 +36,9 @@ menu:
 # side info card
 card:
     enable: true
-    description: ["hi"] # You can add more
     icon_links:
         author:
             name: TroTro
-            theme: solid
-            link: ''
-        # Example:
-        # <name>:
-        #    name: <icon-name>
-        #    theme: <icon-theme>
-        #    link: <link-url>
-    friend_links:
-        []
-        # Example:
-        # <name>: <link-url>
 
 # footer info
 footer:

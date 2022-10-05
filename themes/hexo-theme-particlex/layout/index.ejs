@@ -9,7 +9,9 @@
             <span class="info">
             <div class="wrap">
                 <h1><%= config.title %></h1>
-                <h1 id="typed3"></h1>
+                <div style="text-align:center;font-size:2rem;">
+                    <strong id="typed3"></strong>
+                </div>
             </div>
             </span>
         </div>
@@ -24,9 +26,8 @@
             <%- include("current") %>
         </div>
     </div>
-    <% if (theme.card.enable) { %>
-        <div id="home-card">
-            <%- include("card") %>
-        </div>
-    <% } %>
+
+    <div id="home-card">
+        <%- include("card") %>
+    </div>
 </div>

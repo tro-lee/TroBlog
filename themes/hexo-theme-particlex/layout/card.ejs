@@ -1,35 +1,35 @@
-<div id="card-div">
+<div style="position: relative; top: 0px">
     <div class="card-style" style="width: 300px">
         <div class="avatar">
-            <img src="<%- theme.head_img %> " alt="avatar">
+            <img src="https://avatars.githubusercontent.com/u/63386366?v=4" alt="avatar">
         </div>
         <div class="name">
-            <%= config.author %>
-        </div>
-        <div class="descriptions">
-            <% theme.card.description.forEach(function(desc) { %>
-            <div class="description">
-                <%= desc %>
-            </div>
-            <% }); %>
-        </div>
-        <div class="icon-links">
-            <% Object.keys(theme.card.icon_links).forEach(function(key) { %>
-            <span class="icon-link">
-                <a href="<%- theme.card.icon_links[key].link %>">
-                    <i class="fa-<%- theme.card.icon_links[key].theme %> fa-<%- theme.card.icon_links[key].name %> fa-fw"></i>
-                </a>
-            </span>
-            <% }); %>
-        </div>
-        <div class="friend-links">
-            <% Object.keys(theme.card.friend_links).forEach(function(key) { %>
-            <div class="friend-link">
-                <a href="<%- theme.card.friend_links[key] %>">
-                    <%= key %>
-                </a>
-            </div>
-            <% }); %>
+            <h1>TroTro</h1>
         </div>
     </div>
 </div>
+
+<div style="position: relative; top: 80px;">
+    <div class="card-style" style="width: 300px">
+        <h1>相恋</h1>
+        <div id="loveTime"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    setInterval(() => {
+        var date1= '2022/06/25 00:00:00';
+        var date2 = new Date();
+        var date3 = date2.getTime() - new Date(date1).getTime();
+        var days=Math.floor(date3/(24*3600*1000))
+        var leave1=date3%(24*3600*1000)
+        var hours=Math.floor(leave1/(3600*1000))
+        var leave2=leave1%(3600*1000)
+        var minutes=Math.floor(leave2/(60*1000))
+        var leave3=leave2%(60*1000)
+        var seconds=Math.round(leave3/1000)
+
+        document.getElementById("loveTime").innerHTML =
+            "<h3>" + days + "天" + hours + "时" + minutes + "分" + seconds + "秒" + "</h3>"
+    }, 1000)
+</script>

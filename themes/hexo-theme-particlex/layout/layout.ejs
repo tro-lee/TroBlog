@@ -35,17 +35,14 @@ site.posts.data.sort((a, b) => b.date - a.date);
     <link rel="icon" href="<%- theme.head_img %>">
     <script src="https://cdn.staticfile.org/instant.page/5.1.0/instantpage.min.js" type="module"></script>
     <script src="https://cdn.staticfile.org/font-awesome/6.2.0/js/all.min.js"></script>
-    <% if (theme.vf_fonts_enable) { %>
-        <link rel="stylesheet" href="<%- rootlink %>css/test/fonts.min.css">
-        <link rel="stylesheet" href="<%- rootlink %>css/test/particlex.css">
-    <% } else { %>
-        <link rel="stylesheet" href="<%- rootlink %>css/fonts.min.css">
-        <link rel="stylesheet" href="<%- rootlink %>css/particlex.css">
-    <% } %>
     <script src="https://cdn.staticfile.org/vue/3.2.33/vue.global.prod.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <link rel="stylesheet" href="<%- rootlink %>css/particlex.css">
+    <link rel="stylesheet" href="<%- rootlink %>css/card.css">
 </head>
 <body>
+
 <div id="loading"
      style="height:100vh;width:100vw;position:fixed;display:flex;z-index:200;justify-content:space-between;background:#fff;transition:opacity 0.3s ease-out">
     <div style="position:fixed;height:100vh;width:100vw;display:flex;justify-content:center;align-items:center">
@@ -58,6 +55,7 @@ site.posts.data.sort((a, b) => b.date - a.date);
         </div>
     </div>
 </div>
+
 <div id="layout">
     <i data-fa-symbol="calendar-solid" class="fa-solid fa-calendar fa-fw"></i>
     <i data-fa-symbol="bookmark-solid" class="fa-solid fa-bookmark fa-fw"></i>
@@ -77,6 +75,11 @@ site.posts.data.sort((a, b) => b.date - a.date);
         <img id="img_content" alt="img_show">
     </div>
 </div>
+<canvas
+        id="background"
+        style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:-1"
+></canvas>
+</body>
 <script src="https://cdn.staticfile.org/highlight.js/11.5.1/highlight.min.js"></script>
 <script src="<%- rootlink %>js/particlex.js"></script>
 <script src="<%- rootlink %>js/showimg.js"></script>
@@ -88,22 +91,25 @@ site.posts.data.sort((a, b) => b.date - a.date);
 
 <%- //烟花特效 %>
 <script src="<%- rootlink %>js/firework.js"></script>
-<%- include("script") %>
-</body>
 
+<%- //下雨背景特效 %>
+<script src="/js/background.js"></script>
+
+<%- //打字机特效 %>
 <script data-pjax type="text/javascript">
     try {
         var typed3 = new Typed("#typed3", {
-            strings: ["到达世界最高城","理塘！"],//字符串
-            startDelay: 0,//开始的延迟
+            strings: ["众里寻他千百度","蓦然回首", "那人却在", "灯火阑珊处"],
+            startDelay: 10,//开始的延迟
             typeSpeed: 200,//打字速度
             backSpeed: 100,//回退速度
             loop: true,//是否循环
             showCursor: true,//显示游标
             smartBackspace: true, //默认true
+            cursorChar: '_'
         });
     } catch (err) {
     }
 </script>
-
+<%- include("script") %>
 </html>
