@@ -43,6 +43,7 @@ site.posts.data.sort((a, b) => b.date - a.date);
         <link rel="stylesheet" href="<%- rootlink %>css/particlex.css">
     <% } %>
     <script src="https://cdn.staticfile.org/vue/3.2.33/vue.global.prod.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
 <div id="loading"
@@ -80,14 +81,29 @@ site.posts.data.sort((a, b) => b.date - a.date);
 <script src="<%- rootlink %>js/particlex.js"></script>
 <script src="<%- rootlink %>js/showimg.js"></script>
 
+<%- //指针特效 %>
 <div id="cursor"></div>
 <link rel="stylesheet" href="<%- rootlink %>css/cursor.css"/>
 <script src="<%- rootlink %>js/cursor.js"></script>
 
+<%- //烟花特效 %>
 <script src="<%- rootlink %>js/firework.js"></script>
-
 <%- include("script") %>
-
 </body>
+
+<script data-pjax type="text/javascript">
+    try {
+        var typed3 = new Typed("#typed3", {
+            strings: ["到达世界最高城","理塘！"],//字符串
+            startDelay: 0,//开始的延迟
+            typeSpeed: 200,//打字速度
+            backSpeed: 100,//回退速度
+            loop: true,//是否循环
+            showCursor: true,//显示游标
+            smartBackspace: true, //默认true
+        });
+    } catch (err) {
+    }
+</script>
 
 </html>
