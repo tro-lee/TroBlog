@@ -10,26 +10,29 @@
 </div>
 
 <div style="position: relative; top: 80px;">
-    <div class="card-style" style="width: 300px">
-        <h1>相恋</h1>
+    <div class="card-style" style="width: 300px;
+        background-image: -moz-linear-gradient(180deg, rgb(251, 121, 169), rgb(247, 105, 159));
+        background-image: -webkit-linear-gradient(180deg, rgb(251, 121, 169), rgb(247, 105, 159));
+        background-image: linear-gradient(180deg, rgb(251, 121, 169), rgb(247, 105, 159));">
+        <h1 style="color: white">相恋</h1>
         <div id="loveTime"></div>
     </div>
 </div>
 
 <script type="text/javascript">
     setInterval(() => {
-        var date1= '2022/06/25 00:00:00';
+        var date1 = '2022/06/25 00:00:00';
         var date2 = new Date();
         var date3 = date2.getTime() - new Date(date1).getTime();
-        var days=Math.floor(date3/(24*3600*1000))
-        var leave1=date3%(24*3600*1000)
-        var hours=Math.floor(leave1/(3600*1000))
-        var leave2=leave1%(3600*1000)
-        var minutes=Math.floor(leave2/(60*1000))
-        var leave3=leave2%(60*1000)
-        var seconds=Math.round(leave3/1000)
+        var days = Math.floor(date3 / (24 * 3600 * 1000))
+        var leave1 = date3 % (24 * 3600 * 1000)
+        var hours = Math.floor(leave1 / (3600 * 1000))
+        var leave2 = leave1 % (3600 * 1000)
+        var minutes = Math.floor(leave2 / (60 * 1000))
+        var leave3 = leave2 % (60 * 1000)
+        var seconds = Math.round(leave3 / 1000)
 
         document.getElementById("loveTime").innerHTML =
-            "<h3>" + days + "天" + hours + "时" + minutes + "分" + seconds + "秒" + "</h3>"
+            "<h3 style=\"color: white\" " + ">" + days + "天" + hours + "时" + minutes + "分" + seconds + "秒" + "</h3>"
     }, 1000)
 </script>

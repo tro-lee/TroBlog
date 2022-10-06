@@ -27,6 +27,10 @@ menu:
         name: box-archive
         theme: solid
         src: /archives
+    tags:
+        name: tags
+        theme: solid
+        src: /tags
     # Example:
     # <name>:
     #     name: <icon-name>
