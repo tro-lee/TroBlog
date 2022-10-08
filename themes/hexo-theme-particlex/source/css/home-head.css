@@ -1,0 +1,85 @@
+#home-head {
+    width: 100%;
+    height: calc(100vh + 50px);
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 0;
+    left: 0;
+}
+#home-head .home-info {
+    position: relative;
+    margin: auto;
+}
+#home-head .home-info .info {
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    border-radius: 50%;
+}
+#home-head .home-info .loop:nth-child(1) {
+    border-radius: 38% 62% 63% 37%/41% 44% 56% 59%;
+    background: #fff;
+    opacity: 0.3;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    -webkit-animation: loop1 10s linear infinite;
+    -moz-animation: loop1 10s linear infinite;
+    -o-animation: loop1 10s linear infinite;
+    animation: loop1 10s linear infinite;
+}
+#home-head .home-info .loop:nth-child(2) {
+    border-radius: 38% 62% 63% 37%/41% 44% 56% 59%;
+    background: #fff;
+    opacity: 0.45;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+    -webkit-animation: loop2 15s linear infinite;
+    -moz-animation: loop2 15s linear infinite;
+    -o-animation: loop2 15s linear infinite;
+    animation: loop2 15s linear infinite;
+}
+#home-head .home-info .loop:nth-child(3) {
+    border-radius: 38% 62% 63% 37%/41% 44% 56% 59%;
+    opacity: 0.3;
+    background: #fff;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-animation: loop3 10s linear infinite;
+    -moz-animation: loop3 10s linear infinite;
+    -o-animation: loop3 10s linear infinite;
+    animation: loop3 10s linear infinite;
+}
+#home-head .home-info .loop:nth-child(4) {
+    border-radius: 38% 62% 63% 37%/41% 44% 56% 59%;
+    opacity: 0.45;
+    background: #fff;
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    transform: rotate(120deg);
+    -webkit-animation: loop4 15s linear infinite;
+    -moz-animation: loop4 15s linear infinite;
+    -o-animation: loop4 15s linear infinite;
+    animation: loop4 15s linear infinite;
+}

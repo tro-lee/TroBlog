@@ -7,7 +7,7 @@
 }
 #home-card .card-style {
     padding: 20px 0;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
     text-align: center;
     border: none;
