@@ -433,13 +433,7 @@ pre .copycode {
     position: absolute;
     z-index: -1;
     top: 0;
-    left: 0;
-    height: 100%;
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
 }
 #home-posts-wrap {
     position: relative;

@@ -2,13 +2,13 @@
 # Developer: argvchs
 
 # avatar image url
-head_img: https://avatars.githubusercontent.com/u/63386366?v=4
+head_img: https://raw.githubusercontent.com/TRO148/TroTroBlog/master/image/touxiang.jpg
 
 # home page head info block
 head_block_enable: true
 
 # home page head background style
-home_background: https://imgapi.xl0408.top/index.php
+home_background: http://api.btstu.cn/sjbz/?lx=dongman
 
 # WARNING! vf_fonts (variable fonts) feature is EXPERIMENTAL
 # MDN: https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide
@@ -36,13 +36,6 @@ menu:
     #     name: <icon-name>
     #     theme: <icon-theme>
     #     src: <link-url>
-
-# side info card
-card:
-    enable: true
-    icon_links:
-        author:
-            name: TroTro
 
 # footer info
 footer:
