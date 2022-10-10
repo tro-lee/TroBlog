@@ -54,10 +54,6 @@ const App = Vue.createApp({
     },
     methods: {
         home_click() {
-            window.scrollTo({
-                top: window.innerHeight,
-                behavior: "smooth",
-            });
         },
         handleScroll() {
             var new_local = document.documentElement.scrollTop;
