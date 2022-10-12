@@ -39,12 +39,12 @@ menu:
 
 # footer info
 footer:
-    since: 20xx
+    since: 2022
     # Customize the server domain name ICP
     ICP:
-        enable: false
-        code:
-        link:
+        enable: true
+        code: 鲁ICP备2022032158号-1
+        link: https://beian.miit.gov.cn/#/Integrated/index
 
 # Gitalk
 # https://github.com/gitalk/gitalk

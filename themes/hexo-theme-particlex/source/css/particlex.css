@@ -346,7 +346,7 @@ pre .copycode {
 }
 #home-background {
     position: fixed;
-    z-index: -1;
+    z-index: -2;
     top: 0;
     height: 100%;
     width: 100%;
@@ -530,33 +530,6 @@ pre .copycode {
 }
 .content .hljs .hljs-variable {
     color: #458;
-}
-footer {
-    position: relative;
-    font-size: 14px;
-    width: 100%;
-    text-align: center;
-    top: 150px;
-    padding-bottom: 20px;
-}
-footer .footer-wrap {
-    border-top: 1px solid #aaa;
-    width: 900px;
-    margin: auto;
-    color: #5c6b72;
-}
-footer .footer-wrap div {
-    margin: 15px;
-}
-footer .footer-wrap a {
-    text-decoration: none;
-    color: #66afef;
-}
-footer .footer-icon {
-    display: inline-block;
-    margin: 0 10px;
-    color: #66afef;
-    font-size: 18px;
 }
 
 .categories-tags {

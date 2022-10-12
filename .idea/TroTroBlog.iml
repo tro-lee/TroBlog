@@ -12,5 +12,6 @@
     <orderEntry type="library" name="typed" level="application" />
     <orderEntry type="library" name="vue.global.prod" level="application" />
     <orderEntry type="library" name="all" level="application" />
+    <orderEntry type="library" name="highlight" level="application" />
   </component>
 </module>
