@@ -1,7 +1,7 @@
 ---
 title: Huffman树研究
 date: 2022-10-18 19:16:10
-tags: [数据结构, 树]
+tags: [数据结构]
 ---
 记录研究Huffman树的实现
 <!-- more -->
