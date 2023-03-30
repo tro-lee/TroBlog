@@ -8,20 +8,7 @@
             </span>
             @<%= config.author %>
         </div>
-        <div></div>
-        <div>Based on the <a href="https://hexo.io/">Hexo Engine</a> & <a
-                    href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a></div>
-        <% if (theme.footer.ICP.enable) { %>
-            <div>
-                备案号：
-                <% if (theme.footer.ICP.link) { %>
-                    <a href="<%= theme.footer.ICP.link %>">
-                        <%= theme.footer.ICP.code %>
-                    </a>
-                <% } else { %>
-                    <%= theme.footer.ICP.code %>
-                <% } %>
-            </div>
-        <% } %>
+        <div>备案号为：</div>
+        <a href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备2022032158号-1</a>
     </div>
 </footer>
