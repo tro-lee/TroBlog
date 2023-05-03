@@ -1,7 +1,7 @@
 ---
 title: MongoDB学习笔记
 date: 2023-03-05 22:29:54
-tags: [技术,数据库]
+tags: [技术]
 ---
 NoSql，先研究用来存图片
 <!-- more -->

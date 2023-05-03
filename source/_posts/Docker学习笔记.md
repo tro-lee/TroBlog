@@ -18,6 +18,8 @@ Docker容器使用
 + 退出容器 docker stop xxx
 + 导出与导入容器 docker export xxx > xxx / docker import xxxx
 + 删除容器docker rm -f xxx
+Docker容器与宿主机的文件共享，可以使用-v参数，将宿主机的文件夹挂载到容器中，这样就可以实现容器与宿主机的文件共享，
+也可以使用存储卷，将数据保存在本地，也可以保存在远程服务器上。
 
 Docker镜像使用
 -
@@ -46,6 +48,7 @@ Docker Compose使用
 >   其他参数看[这里](https://www.runoob.com/docker/docker-compose.html)
 
 **当然直接用portainer也可以嗷**
+*Partainer只需要安装一次即可，因为Partainer直接与Docker引擎交互，能够全局监控Docker的所有容器。*
 
 Docker Volume
 -

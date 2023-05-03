@@ -103,5 +103,5 @@ theme: hexo-theme-particlex
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: ubuntu@43.143.151.29:/home/ubuntu/repos/TroTroBlog.git
-  branch: master
+  repo: https://github.com/TRO148/tro148.github.io.git
+  branch: main
