@@ -1,7 +1,10 @@
 ---
 title: 用go写jvm之解析class文件
 date: 2023-05-26 15:13:13
-tags: [Go]
+tags:
+  - Go
+  - 项目
+  - JVM
 ---
 在搜索到class文件后，得到字节码数据，然后将它解析为class文件结构
 <!-- more -->

@@ -1,7 +1,9 @@
 ---
 title: Docker学习笔记
 date: 2023-03-05 23:34:33
-tags: [技术]
+tags:
+    - Docker
+    - 云
 ---
 Docker 是一个用于开发，交付和运行应用程序的开放平台。
 <!-- more -->

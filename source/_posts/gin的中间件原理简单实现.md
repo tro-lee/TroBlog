@@ -1,7 +1,9 @@
 ---
 title: gin的中间件原理简单实现
 date: 2023-05-19 10:07:13
-tags: [Go]
+tags:
+  - Go
+  - Gin
 ---
 通过向添加handlers中间件，并按顺序执行，实现中间件
 <!-- more -->

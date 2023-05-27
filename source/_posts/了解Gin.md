@@ -1,7 +1,9 @@
 ---
 title: 了解Gin
 date: 2023-04-27 20:01:15
-tags: [Go]
+tags:
+    - Go
+    - Gin
 ---
 Go的框架很多，gin是其中一个，通过研究gin的源代码，来了解gin的实现原理，以及gin的使用方法。
 <!-- more -->

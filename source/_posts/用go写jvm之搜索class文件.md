@@ -1,7 +1,10 @@
 ---
 title: 用go写jvm之搜索class文件
 date: 2023-05-23 21:12:27
-tags: [Go]
+tags:
+  - Go
+  - 项目
+  - JVM
 ---
 java虚拟机首先要做的事情就是搜索class文件，这里我们用go来实现搜索class文件的功能。
 <!-- more -->
