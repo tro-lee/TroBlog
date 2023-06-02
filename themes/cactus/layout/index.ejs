@@ -4,7 +4,6 @@
   <% } %>
   <% if (theme.social_links) { %>
     <p>
-      <%= __('index.find_me_on') %>
       <% var nb_links = theme.social_links.length %>
       <% var i = 0 %>
       <% for(var {label, icon, link} of theme.social_links) { %>
@@ -23,9 +22,9 @@
       ---></a><!--
     ---><% } %><!--
     ---><%= ( nb_links > 0 && i < nb_links-1 ?
-            ( i == nb_links-2 ? ' '+__('index.enum_and')+' '
-            : __('index.enum_comma')+' ' )
-            : '.' ) %>
+            ( i == nb_links-2 ? ' '
+            : ' ' )
+            : '' ) %>
         <% i+=1 %>
       <% } %>
     </p>
@@ -33,7 +32,6 @@
 </section>
 
 <section id="writing">
-  <span class="h1"><a href="<%- url_for(theme.nav.articles) %>"><%= __('index.articles') %></a></span>
   <% if (theme.tags_overview && site.tags.length) { %>
   <span class="h2"><%= __('index.topics') %></span>
   <span class="widget tagcloud">
@@ -60,6 +58,9 @@
   <% } %>
 </section>
 
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=400 height=86 src="//music.163.com/outchain/player?type=2&id=1379107125&auto=1&height=66"></iframe>
+
+
 <% if (site.data.projects) { %>
 <section id="projects">
   <span class="h1"><a href="<%- url_for(theme.projects_url) %>"><%= __('index.projects') %></a></span>
@@ -72,3 +73,4 @@
   </ul>
 </section>
 <% } %>
+

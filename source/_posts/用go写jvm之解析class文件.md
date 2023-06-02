@@ -155,7 +155,7 @@ func newConstantInfo(tag uint8, cp ConstantPool) ConstantInfo {
 	}
 }
 ````
-对于不同的常量处理过程，详见[这里](https://github.com/TRO148/TroJvm/tree/master/go/src/jvmgo/classfile)
+对于不同的常量处理过程，详见[这里](https://github.com/TRO148/TroJvm/tree/master/classfile)
 
 ## 解析字段和方法表
 由于字段表和方法表采用相同的结构，所以采用相同的方法进行解析。
@@ -269,7 +269,7 @@ func newAttributeInfo(attrName string, attrLen uint32, cp ConstantPool) Attribut
 ````
 首先读取属性表，然后再读每一个属性，根据属性名，创建属性信息，然后读取属性信息。
 
-具体属性信息也详见[这里](https://github.com/TRO148/TroJvm/tree/master/go/src/jvmgo/classfile)
+具体属性信息也详见[这里](https://github.com/TRO148/TroJvm/tree/master/classfile)
 
 ### 结束
 解析class文件部分，基本就是使用reader，读取固定长度的字节，获取相应的信息，并组成不同的信息结构，这里就不再赘述了。

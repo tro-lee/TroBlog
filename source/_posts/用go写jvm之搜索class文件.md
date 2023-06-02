@@ -163,7 +163,7 @@ func newEntry(path string) Entry {
 	return newDirEntry(path)
 }
 ````
-[其他Entry实现在TRO148/TroJvm中](https://github.com/TRO148/TroJvm/tree/master/go/src/jvmgo/classpath)
+[其他Entry实现在TRO148/TroJvm中](https://github.com/TRO148/TroJvm/tree/master/classpath)
 
 ## 测试
 ````Golang

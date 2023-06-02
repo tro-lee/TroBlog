@@ -44,12 +44,12 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: false
+  enable: true
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
-  hljs: false
+  hljs: true
 prismjs:
   enable: false
   preprocess: true
@@ -105,3 +105,52 @@ deploy:
   type: git
   repo: https://github.com/TRO148/tro148.github.io.git
   branch: main
+
+# Markdown-it config
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+  anchors:
+    level: 2
+    collisionSuffix: 'v'
+    permalink: true
+    permalinkClass: header-anchor
+    permalinkSymbol: ¶
+
+# Live2D
+
+## https://github.com/EYHN/hexo-helper-live2d
+
+live2d:
+  enable: true
+  scriptFrom: local # 默认
+  pluginModelPath: assets/ # 模型文件相对与插件根目录路径
+  model:
+    use: live2d-widget-model-wanko # 模型名字
+    scale: 1
+    hHeadPos: 0.5
+    vHeadPos: 0.618
+  display:
+    superSample: 2
+    width: 250  # 显示位置及大小 我设置的250*500
+    height: 500
+    position: right
+    hOffset: 0
+    vOffset: -20
+  mobile:
+    show: false  # 手机显示开关，建议关闭
+    scale: 0.5
+  react:
+    opacityDefault: 0.7
+    opacityOnHover: 0.2

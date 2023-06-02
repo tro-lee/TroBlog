@@ -15,8 +15,9 @@ direction: ltr
 # languages/*.yml
 nav:
   home: /
-  about: /about/
   articles: /archives/
+  search: /search/
+#  about: /about/
   projects: http://github.com/tro148
 
 
@@ -30,10 +31,30 @@ social_links:
   -
     icon: github
     link: http://github.com/tro148
+  -
+    icon: twitter
+    link: https://twitter.com/TroTro81726982
+  -
+    icon: docker
+    link: https://hub.docker.com/u/trotroisgoodboy
+  -
+    icon: bilibili
+    link: https://space.bilibili.com/60647827
+  -
+    icon: qq
+    link: https://qm.qq.com/cgi-bin/qm/qr?k=UQkLAZhORd8AZG7PtC8yALTwyBKvOrm6&noverify=0&personal_qrcode_source=4
+
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
-tags_overview: true
+tags_overview:
+    min_font: 20
+    max_font: 20
+    unit: px
+    color: true
+    start_color: '#48D1CC'
+    end_color: '#66CDAA'
+
 
 # Customize the overview with the most recent blog posts on the index page.
 # Options:
@@ -41,7 +62,7 @@ tags_overview: true
 #   - post_count: whether to show only the x most recent posts.
 #   - sort_updated: sort posts by last modification date instead of creation date.
 posts_overview:
-  show_all_posts: true
+  show_all_posts: false
   post_count: 10
   sort_updated: true
 
@@ -116,7 +137,7 @@ favicon:
 
 # The color scheme that should be used to highlight codeblocks.
 # See source/css/_highlight for a list of all available color schemes.
-# highlight: rainbow
+highlight: github
 
 # Set the color scheme.
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.
@@ -132,7 +153,7 @@ page_width: 48
 ##############################################################################
 
 # Enable or disable the RSS feed.
-rss: false
+rss: true
 
 # Turn your web pages into graph objects (see http://ogp.me).
 open_graph:
@@ -153,15 +174,15 @@ mathjax:
 # Fill in your Disqus Comments Shortname to enable Disqus comments.
 disqus:
   enabled: false
-  shortname: cactus-1
+  shortname: tro148.github.io
 
 # Fill in your Utterances data to enable Utterances comments
 utterances:
-  enabled: false
-  repo: owner/githubrepo
-  issue_term: pathname
+  enabled: true
+  repo: tro148/tro148.github.io
+  issue_term: comment
   label: Comment
-  theme: github-dark
+  theme: github-light
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics:

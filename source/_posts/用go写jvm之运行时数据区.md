@@ -75,7 +75,7 @@ type OperandStack struct {
 
 对于java虚拟栈，我们需要实现push和pop方法，用来入栈和出栈。
 
-代码详见[这里](https://github.com/TRO148/TroJvm/tree/master/go/src/jvmgo/rtda)
+代码详见[这里](https://github.com/TRO148/TroJvm/tree/master/rtda)
 
 ### 总结
 在这里，我们实现了线程私有的运行时数据区，包括pc寄存器和Java虚拟机栈，其中Java虚拟机栈由栈帧组成，栈帧包含局部变量表和操作数栈。
