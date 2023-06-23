@@ -5,6 +5,7 @@ tags:
   - Go
   - 项目
   - JVM
+  - JAVA
 ---
 java虚拟机首先要做的事情就是搜索class文件，这里我们用go来实现搜索class文件的功能。
 <!-- more -->
