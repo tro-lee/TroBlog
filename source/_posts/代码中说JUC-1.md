@@ -2,13 +2,13 @@
 title: 代码中说JUC-1
 date: 2023-06-23 21:08:40
 tags: 
-  - JAVA
+  - Java
   - JUC
 ---
 本系列是写在代码里的记录，用来记录juc的学习过程
 <!-- more -->
 具体代码在github里嗷~
-````JAVA
+````Java
 /*
   线程常用方法
   @author trotro
