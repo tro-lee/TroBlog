@@ -103,7 +103,7 @@ theme: cactus
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/tro-lee/tro-lee.github.io.git
+  repo: git@github.com:tro-lee/TroBlog.git
   branch: main
 
 # Markdown-it config
