@@ -3,8 +3,4 @@ Thumbs.db
 db.json
 *.log
 node_modules/
-.github/
-.idea
 public/
-.deploy*/
-_multiconfig.yml
